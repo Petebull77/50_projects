@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+/*
+counter = 0;
+//document.addEventListener("DomContentLoaded", function(event){
+const body = document.querySelector('body');
+let output = document.createElement('div');
+
+console.log(output);
+
+
+output.innerHTML = "click the button";
+output.style.fontSize = '2rem';
+output.style.padding = '10px';
+output.setAttribute('class', 'message');
+body.appendChild(output);
+
+let btn = document.createElement('button');
+btn.innerHTML = "click me";
+btn.style.background = 'red';
+btn.style.padding = '15px';
+btn.style.color = 'white';
+body.appendChild(btn);
+
+btn.addEventListener('click', function(){
+    console.log('clicked');
+    counter++;
+    let mes = 'You clicked the button: ' +counter+ ' times'
+    document.querySelector('.message').innerHTML = mes;
+})
+
+
+//})
+*/
+
+
+
+counter = 0;
+
+const body = document.querySelector('body');
+let output = document.createElement('div');
+output.innerHTML = "Click the button";
+//output.setAttribute('class', 'message');
+output.style.fontSize = '2rem';
+
+body.appendChild(output);
+let btn = document.createElement('button');
+btn.style.padding = '15px';
+btn.style.background = 'red';
+btn.innerHTML = 'Click me';
+body.appendChild(btn);
+btn.addEventListener('click', function(){
+    counter++;
+    //let mes = output.innerHTML;
+    output.innerHTML = 'You clicked '+counter+ ' times';
+    if(counter > 30){
+        output.innerHTML ="get a life and stop clicking" +counter;
+    }
+    if(counter > 40){
+        output.innerHTML = 'You DONE!!!'
+    }
+})
+
+
+
+</script>
+
+
+</body>
+</html>

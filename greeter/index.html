@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="output"></div>
+    Name: <input type="text">
+    <button class="btn">Message</button>
+
+
+    <script>
+        const output = document.querySelector('.output');
+        const btn = document.querySelector('.btn');
+        const greet = document.querySelector('input');
+        
+        btn.addEventListener('click', function(){
+            let message = 'Hello ' +greet.value+ '!';
+            output.innerHTML = message; 
+
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class = "box box1"></div>
+        <div class = "box box2"></div>
+        <div class = "box box3"></div>
+
+    </div>
+    <div class = "show hide">
+        <div class= "overlay close"></div>
+        <div class="output">
+            <span class="close">x</span>
+            <img src=""></div>
+
+        
+        <script>
+            const images = document.querySelectorAll('.box');
+            const output = document.querySelector('.output');
+            const show = document.querySelector('.show');
+            const close = document.querySelector('.close');
+            
+            
+            images.forEach(function(ele){
+                
+                ele.addEventListener('click', popImage);
+            })
+            close.forEach(function(ele){
+                ele.addEventListener('click',function(){
+                    show.classList.add('hide');
+                })
+            })
+            
+            
+            function popImage(e){
+                console.log(this);
+                
+                
+                show.classList.remove("hide");
+            }
+            
+
+        </script>
+
+    </div>
+
+
+
+
+
+    <script>
+
+
+
+
+
+    </script>
+</body>
+</html>

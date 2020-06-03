@@ -1,0 +1,55 @@
+
+.container {
+    min-height: ;
+    display: flex;
+    justify-content: center;
+    
+}
+.box {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+.box1 {
+    background: green;
+}
+.box2{
+    background: blue;
+}
+.box3 {
+    background: red;
+}
+.output {
+    position: absolute;
+    top: 20%;
+    left:20%;
+    width: 60%;
+    height: 40%;
+    background: white;
+    z-index: 1;
+}
+.close {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+}
+.hide {
+    display: none;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba( 0, 0, 0, .66);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.output .box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
